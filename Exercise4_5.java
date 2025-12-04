@@ -1,27 +1,22 @@
-public class Exercise4_5 {
+Adım,Metot,İşlem,Çıktı (Kümülatif)
+1,main,"print(""No, I "")","No, I "
+2,main,zoop() çağrılır,
+3,zoop,baffle() çağrılır (1),
+4,baffle,"print(""wug"")","No, I wug"
+5,baffle,ping() çağrılır (1),
+6,ping,"println(""."")","No, I wug. (Yeni satır)"
+7,zoop,"print(""You wugga "")","No, I wug.\nYou wugga "
+8,zoop,baffle() çağrılır (2),
+9,baffle,"print(""wug"")","No, I wug.\nYou wugga wug"
+10,baffle,ping() çağrılır (2),
+11,ping,"println(""."")","No, I wug.\nYou wugga wug. (Yeni satır)"
+12,main,"print(""I "")","No, I wug.\nYou wugga wug.\nI "
+13,main,baffle() çağrılır (3),
+14,baffle,"print(""wug"")","No, I wug.\nYou wugga wug.\nI wug"
+15,baffle,ping() çağrılır (3),
+16,ping,"println(""."")","No, I wug.\nYou wugga wug.\nI wug. (Yeni satır)"
 
-    public static void zoop(String fred, int bob) {
-        System.out.println(fred);
-        if (bob == 5) {
-            ping("not ");
-        } else {
-            System.out.println("!");
-        }
-    }
-
-    public static void main(String[] args) {
-        int bizz = 5;
-        int buzz = 2;
-        zoop("just for", bizz);
-        clink(2 * buzz);
-    }
-
-    public static void clink(int fork) {
-        System.out.print("It's ");
-        zoop("breakfast ", fork);
-    }
-
-    public static void ping(String strangStrung) {
-        System.out.println("any " + strangStrung + "more ");
-    }
-}
+    Kodun çıktısı:
+No, I wug.
+You wugga wug.
+I wug.
